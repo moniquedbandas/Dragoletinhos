@@ -3,6 +3,7 @@ package dragoletinhos.view;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JRadioButton;
 
 /**
  *
@@ -41,7 +42,7 @@ public class TelaCachorro extends javax.swing.JFrame {
         jTextFieldNomeCachorro = new javax.swing.JTextField();
         jTextFieldIdadeCachorro = new javax.swing.JTextField();
         jTextFieldSexoCachorro = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jTextFieldPesoCachorro = new javax.swing.JTextField();
         jTextFieldPorte = new javax.swing.JTextField();
         jTextFieldTutorCachorro = new javax.swing.JTextField();
         jTextFieldRacaCachorro = new javax.swing.JTextField();
@@ -113,9 +114,9 @@ public class TelaCachorro extends javax.swing.JFrame {
         jTextFieldSexoCachorro.setForeground(new java.awt.Color(51, 87, 201));
         jTextFieldSexoCachorro.setBorder(null);
 
-        jTextField4.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(51, 87, 201));
-        jTextField4.setBorder(null);
+        jTextFieldPesoCachorro.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jTextFieldPesoCachorro.setForeground(new java.awt.Color(51, 87, 201));
+        jTextFieldPesoCachorro.setBorder(null);
 
         jTextFieldPorte.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jTextFieldPorte.setForeground(new java.awt.Color(51, 87, 201));
@@ -152,6 +153,11 @@ public class TelaCachorro extends javax.swing.JFrame {
         btVoltar.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 161, 228)));
         btVoltar.setContentAreaFilled(false);
         btVoltar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btVoltarActionPerformed(evt);
+            }
+        });
 
         btLimpar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btLimpar.setForeground(new java.awt.Color(51, 87, 201));
@@ -202,7 +208,7 @@ public class TelaCachorro extends javax.swing.JFrame {
                     .addComponent(jTextFieldNomeCachorro)
                     .addComponent(jTextFieldSexoCachorro)
                     .addComponent(jTextFieldIdadeCachorro)
-                    .addComponent(jTextField4)
+                    .addComponent(jTextFieldPesoCachorro)
                     .addComponent(jTextFieldPorte, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -279,7 +285,7 @@ public class TelaCachorro extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelPesoCachorro)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextFieldPesoCachorro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelPorte)
@@ -309,8 +315,23 @@ public class TelaCachorro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLimparActionPerformed
-        // TODO add your handling code here:
+        jTextFieldNomeCachorro.setText("");
+        jTextFieldIdadeCachorro.setText("");
+        jTextFieldAlimentCachorro.setText("");
+        jTextFieldPorte.setText("");
+        jTextFieldPesoCachorro.setText("");
+        jTextFieldRacaCachorro.setText("");
+        jTextFieldSexoCachorro.setText("");
+        jTextFieldTutorCachorro.setText("");
+        jComboBoxCachorro.setSelectedIndex(0);
+        buttonGroup1.clearSelection();
     }//GEN-LAST:event_btLimparActionPerformed
+
+    private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
+        TelaInicialCadastro telCad = new TelaInicialCadastro();
+        telCad.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -366,10 +387,10 @@ public class TelaCachorro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelSexo;
     private javax.swing.JLabel jLabelTutorCachorro;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextFieldAlimentCachorro;
     private javax.swing.JTextField jTextFieldIdadeCachorro;
     private javax.swing.JTextField jTextFieldNomeCachorro;
+    private javax.swing.JTextField jTextFieldPesoCachorro;
     private javax.swing.JTextField jTextFieldPorte;
     private javax.swing.JTextField jTextFieldRacaCachorro;
     private javax.swing.JTextField jTextFieldSexoCachorro;
