@@ -15,7 +15,7 @@ public class Animal {
         
     }
     
-    public Animal(String nome, String sexo, String raca, String tipoAlimentacao, double peso, int idade, boolean castrado) {
+    public Animal(String nome, String sexo, String raca, double peso, int idade, String tipoAlimentacao, boolean castrado) {
         this.nome = nome;
         this.sexo = sexo;
         this.raca = raca;

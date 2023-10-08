@@ -31,7 +31,7 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
         rbCoelho = new javax.swing.JRadioButton();
         rbGato = new javax.swing.JRadioButton();
         rbCachorro = new javax.swing.JRadioButton();
-        btVoltar = new javax.swing.JButton();
+        btInfo = new javax.swing.JButton();
         btAvancar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -43,7 +43,7 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 87, 201));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Tela de cadastros");
+        jLabel1.setText("Petshop Dragoletinhos");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "O que deseja cadastrar?", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(51, 87, 201))); // NOI18N
 
@@ -67,15 +67,15 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
         rbCachorro.setForeground(new java.awt.Color(51, 54, 155));
         rbCachorro.setText("Cachorro");
 
-        btVoltar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        btVoltar.setForeground(new java.awt.Color(51, 87, 201));
-        btVoltar.setText("VOLTAR");
-        btVoltar.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 161, 228)));
-        btVoltar.setContentAreaFilled(false);
-        btVoltar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btVoltar.addActionListener(new java.awt.event.ActionListener() {
+        btInfo.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btInfo.setForeground(new java.awt.Color(51, 87, 201));
+        btInfo.setText("INFO");
+        btInfo.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 161, 228)));
+        btInfo.setContentAreaFilled(false);
+        btInfo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btVoltarActionPerformed(evt);
+                btInfoActionPerformed(evt);
             }
         });
 
@@ -106,7 +106,7 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
                             .addComponent(rbCachorro))
                         .addGap(132, 132, 132))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(btVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btAvancar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(83, 83, 83))))
@@ -124,7 +124,7 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
                 .addComponent(rbTutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btAvancar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29))
         );
@@ -157,11 +157,9 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
-        TelaLogin telLog = new TelaLogin();
-        telLog.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btVoltarActionPerformed
+    private void btInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInfoActionPerformed
+        
+    }//GEN-LAST:event_btInfoActionPerformed
 
     private void btAvancarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAvancarActionPerformed
         TelaCachorro telDog = new TelaCachorro();
@@ -206,7 +204,7 @@ public class TelaInicialCadastro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btAvancar;
-    private javax.swing.JButton btVoltar;
+    private javax.swing.JButton btInfo;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
